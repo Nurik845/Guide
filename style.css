@@ -1,0 +1,1036 @@
+#bg .gm,
+#bg .game .cs,
+#bg .game .mc,
+#bg .ev,
+#bg .ll .ls,
+#bg .ll .lp,
+#bg .lal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+#bg .gm {
+  animation-delay: 0.2s;
+}
+
+#bg .game .cs {
+  animation-delay: 0.4s;
+}
+
+#bg .game .mc {
+  animation-delay: 0.6s;
+}
+
+#bg .ev {
+  animation-delay: 0.8s;
+}
+
+#bg .ll .ls {
+  animation-delay: 1s;
+}
+
+#bg .ll .lp {
+  animation-delay: 1.2s;
+}
+
+#bg .lal {
+  animation-delay: 1.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* просто */
+nav ul {
+  list-style: none;
+  background-color: #444;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #1e3c72;
+  color: #ffcc00;
+}
+.home {
+  background-image: url(./background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: #f0f0f0;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+  scroll-behavior: smooth;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  justify-content: center;
+}
+.home h1 {
+  color: white;
+  padding-top: 150px;
+  font-size: 50px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home p {
+  color: white;
+  margin-top: 110px;
+  font-size: 20px;
+  border: 2px solid white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 30px;
+  border-radius: 5px;
+  animation: borderPulse 2s ease-in-out infinite;
+  transition: all 1s linear;
+}
+.home a {
+  color: white;
+  text-decoration: none;
+}
+.lg p {
+  margin-top: 250px;
+}
+.lg p:hover {
+  background-color: red;
+}
+.lg a:hover {
+  color: black;
+}
+@keyframes borderPulse {
+  0% {
+    border-width: 3px;
+    border-color: white;
+  }
+  50% {
+    border-width: 8px;
+    border-color: white;
+  }
+  100% {
+    border-width: 3px;
+    border-color: white;
+  }
+}
+#bg {
+  background-image: url(./bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1300px;
+  width: 100%;
+  padding-top: 70px;
+}
+.cs {
+  margin-left: 100px;
+  width: 50%;
+  padding-top: 70px;
+}
+.mc {
+  margin-right: 100px;
+  padding-top: 70px;
+}
+.game {
+  display: flex;
+  height: 500px;
+}
+.gm {
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+}
+.ev {
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+  margin-bottom: 85px;
+}
+.ll {
+  display: flex;
+  height: 400px;
+}
+.ls {
+  margin-left: 100px;
+  width: 50%;
+}
+.lal {
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+}
+footer {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.gamehp {
+  background-image: url(./gamebg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+}
+.gamehp h1 {
+  color: white;
+  padding-top: 90px;
+  font-size: 40px;
+  letter-spacing: 7px;
+}
+h1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 1s ease-out forwards;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.letp h1 {
+  border: 2px solid white;
+  width: fit-content;
+  padding: 10px 20px;
+  margin-top: 150px;
+  animation: fadeIn 1s ease-in forwards;
+  transition: all 1s linear;
+}
+
+.letp h1:hover {
+  background-color: red;
+  color: black;
+}
+.letp a:hover {
+  color: black;
+}
+.letp a {
+  text-decoration: none;
+  color: white;
+}
+#gmbs {
+  background-image: url(./gmbg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 100%;
+}
+.gon {
+  padding-top: 45px;
+  display: flex;
+}
+.game1 {
+  padding-left: 27px;
+  font-size: 10px;
+  width: 150px;
+}
+figcaption a {
+  color: white;
+  text-decoration: none;
+}
+.caption {
+  padding-top: 7px;
+  padding-left: 24px;
+}
+.game2 {
+  margin-left: 180px;
+  font-size: 10px;
+}
+.caption2 {
+  padding-top: 7px;
+  padding-left: 50px;
+}
+.game3 {
+  margin-left: 340px;
+  font-size: 10px;
+}
+.caption3 {
+  padding-top: 7px;
+  padding-left: 45px;
+}
+img {
+  border-radius: 10px;
+}
+.game4 {
+  margin-left: 245px;
+  font-size: 10px;
+}
+.caption4 {
+  padding-top: 7px;
+  padding-left: 45px;
+}
+.game5 {
+  margin-left: 190px;
+  font-size: 10px;
+}
+.caption5 {
+  padding-top: 7px;
+  padding-left: 45px;
+}
+.gon2 {
+  margin-top: 540px;
+  display: flex;
+}
+
+.game6 {
+  margin-left: 27px;
+  font-size: 10px;
+}
+.caption6 {
+  padding-top: 7px;
+  padding-left: 29px;
+}
+.game7 {
+  margin-left: 200px;
+  font-size: 10px;
+}
+.caption7 {
+  padding-top: 7px;
+  padding-left: 35px;
+}
+.game8 {
+  margin-left: 65px;
+  font-size: 10px;
+}
+.caption8 {
+  padding-top: 7px;
+  padding-left: 25px;
+}
+.game9 {
+  margin-left: 170px;
+  font-size: 10px;
+}
+.caption9 {
+  padding-top: 7px;
+  padding-left: 35px;
+}
+.game10 {
+  margin-left: 210px;
+  font-size: 10px;
+}
+.caption10 {
+  padding-top: 7px;
+  padding-left: 40px;
+}
+.game11 {
+  margin-left: 190px;
+  font-size: 8px;
+}
+.caption11 {
+  padding-top: 9px;
+  padding-left: 22px;
+}
+.hover-gif {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+  padding-left: 24px;
+}
+
+.game1:hover .static-image {
+  display: none;
+}
+
+.game1:hover .hover-gif {
+  display: block;
+}
+.game1 {
+  position: relative;
+  display: inline-block;
+}
+
+.static-image {
+  display: block;
+  width: 135px;
+}
+.game2:hover .static-image {
+  display: none;
+}
+
+.game2:hover .hover-gif2 {
+  display: block;
+}
+.game2 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+.game3:hover .static-image {
+  display: none;
+}
+
+.game3:hover .hover-gif3 {
+  display: block;
+}
+.game3 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif3 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game4:hover .static-image {
+  display: none;
+}
+
+.game4:hover .hover-gif4 {
+  display: block;
+}
+.game4 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif4 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+.game5:hover .static-image {
+  display: none;
+}
+
+.game5:hover .hover-gif5 {
+  display: block;
+}
+.game5 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif5 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game6:hover .static-image {
+  display: none;
+}
+
+.game6:hover .hover-gif6 {
+  display: block;
+}
+.game6 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif6 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game7:hover .static-image {
+  display: none;
+}
+
+.game7:hover .hover-gif7 {
+  display: block;
+}
+.game7 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif7 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game8:hover .static-image {
+  display: none;
+}
+
+.game8:hover .hover-gif8 {
+  display: block;
+}
+.game8 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif8 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game9:hover .static-image {
+  display: none;
+}
+
+.game9:hover .hover-gif9 {
+  display: block;
+}
+.game9 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif9 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game10:hover .static-image {
+  display: none;
+}
+
+.game10:hover .hover-gif10 {
+  display: block;
+}
+.game10 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif10 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.game11:hover .static-image {
+  display: none;
+}
+
+.game11:hover .hover-gif11 {
+  display: block;
+}
+.game11 {
+  position: relative;
+  display: inline-block;
+}
+.hover-gif11 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135px;
+  height: 130px;
+}
+
+.footer2 {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section2 {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section2 h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+.footer-section2 p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-icons2 {
+  margin-top: 15px;
+}
+
+.social-icons2 img {
+  display: inline-block;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom2 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.lshp {
+  background-image: url(./ls.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.lshp h1 {
+  padding-top: 390px;
+  width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 5px;
+  padding-left: 50px;
+}
+.lshp h2 {
+  font-size: 40px;
+  border: 2px solid gold;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 30px;
+  margin-left: 735px;
+  background-color: gold;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in forwards;
+  transition: all 1s linear;
+}
+.lshp h2:hover {
+  background-color: #1e3c72;
+}
+.lshp a {
+  text-decoration: none;
+  color: black;
+}
+#lsbs {
+  background-image: url(./lsbbd.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+  width: 100%;
+}
+.math {
+  padding-left: 345px;
+  padding-top: 240px;
+  height: 20%;
+}
+.cp1 {
+  padding-left: 50px;
+}
+.cp1 a {
+  color: black;
+}
+.english {
+  padding-left: 310px;
+  width: 50%;
+  padding-top: 70px;
+}
+.cp2 a {
+  color: black;
+}
+.cp2 {
+  padding-left: 55px;
+  padding-top: 2px;
+}
+.physics {
+  padding-left: 95px;
+  padding-top: 240px;
+}
+.cp3 a {
+  color: black;
+}
+.cp3 {
+  padding-left: 45px;
+  padding-top: 2px;
+}
+.twls {
+  display: flex;
+}
+
+.footer3 {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
+}
+
+.footer-container3 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-section3 {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.footer-section3 h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+.footer-section3 p,
+.footer-section3 ul {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-section3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section3 ul li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom3 {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.lphp {
+  background-image: url(./lpbg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.lphp h1 {
+  padding-top: 340px;
+  padding-left: 60px;
+}
+
+.lphp h2 {
+  margin-top: 60px;
+  margin-left: 720px;
+  font-size: 45px;
+  border: 2px solid green;
+  width: fit-content;
+  padding: 15px 25px;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in forwards;
+  transition: all 1s linear;
+}
+
+.lphp h2:hover {
+  background-color: green;
+}
+
+.lphp a {
+  color: white;
+  text-decoration: none;
+}
+
+.lphp a:hover {
+  color: blue;
+}
+
+#lpbs {
+  background-image: url(./lpbbd.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1050px;
+  width: 100%;
+}
+.mb {
+  padding-top: 115px;
+  padding-left: 340px;
+}
+.lb1 {
+  display: flex;
+}
+.dx {
+  padding-top: 105px;
+  padding-left: 705px;
+}
+.ln {
+  padding-top: 100px;
+  padding-left: 105px;
+}
+.lb2 {
+  display: flex;
+}
+.hp {
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.as {
+  padding-left: 680px;
+  padding-top: 115px;
+}
+
+.footer4 {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container4 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-section4 {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.footer-section4 h3 {
+  color: #ff9900;
+  margin-bottom: 15px;
+}
+
+.footer-bottom4 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* @media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer4 {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav ul li {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .home h1,
+  .gm h1,
+  .ev h1,
+  .lal h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .home p,
+  .lg p {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .game img,
+  .ll img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .game,
+  .ll {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .footer-section p,
+  .footer-section h3 {
+    text-align: center;
+  }
+
+  .game1,
+  .game2,
+  .game3,
+  .game4,
+  .game5,
+  .game6,
+  .game7,
+  .game8,
+  .game9,
+  .game10,
+  .game11 {
+    text-align: center;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
